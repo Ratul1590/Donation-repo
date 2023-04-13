@@ -185,6 +185,7 @@ nav{
     color: rgb(124, 117, 117);
     padding-bottom: 30px
 }
+
 .contribute-btn{
     
     background-color: rgb(244, 69, 10);
@@ -195,7 +196,9 @@ nav{
     font-size: 20px;
     padding: 15px 20px;
     margin-bottom: 100px;
+    margin-left: 100px
 }
+
 .btn-center{
     background-color: rgb(244, 69, 10);
     color: white;
@@ -257,5 +260,55 @@ nav{
 .footer-descriptioner{
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+@media screen and (max-width:600px) {
+    .main-head, nav{
+        text-align: start;
+        margin: 0px;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .main-head img{
+        width: 100%;
+    }
+    .donate-section {
+        margin-top: 30px;
+        text-align: center;
+        padding: 20px;
+    }
+    .donate-details, .donation-description{
+        margin: 0px;
+        padding: 20px;
+        gap: 5px;
+    }
+    .facility-container, .how-to-contribute, .contact-container{
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0px;
+        padding: 20px;
+    }
+    .how-to-contribute, .contribute__content{
+        padding: 20px 50px;
+        margin: 0px;
+        text-align: start;
+        width: 100%;
+    }
+    .contribute__image{
+        display: none;
+       
+    }
+    .contribute-btn{
+        position: relative;
+        right: 80px;
+        padding: 0px 10px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .email{
+        margin-bottom: 10px;
+    } 
+
 }
     
